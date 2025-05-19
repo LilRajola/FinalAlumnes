@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://pyvr835g2spa"]
+[gd_scene load_steps=6 format=3 uid="uid://pyvr835g2spa"]
 
 [ext_resource type="Script" uid="uid://d3u3b1gor5fry" path="res://Scripts/joc.gd" id="1_6rkpb"]
 [ext_resource type="PackedScene" uid="uid://cetan8b78msb0" path="res://Escenes/nau.tscn" id="2_jw2hj"]
 [ext_resource type="Texture2D" uid="uid://b6tm6oxknn8tu" path="res://Imatges/Nebulosa.png" id="2_krb3q"]
 [ext_resource type="PackedScene" uid="uid://c7hcf04v1ndjj" path="res://Escenes/marcador.tscn" id="4_bgppj"]
+[ext_resource type="PackedScene" uid="uid://dr2nuh74joobt" path="res://Escenes/power_up_bomba.tscn" id="4_rm3ff"]
 
 [node name="Joc" type="Node2D"]
 script = ExtResource("1_6rkpb")
@@ -23,6 +24,9 @@ region_rect = Rect2(0, 0, 100000, 100000)
 [node name="Meteorits" type="Node2D" parent="."]
 
 [node name="PowerUPs" type="Node2D" parent="."]
+
+[node name="PowerUPBomba" parent="PowerUPs" instance=ExtResource("4_rm3ff")]
+position = Vector2(-1, -158)
 
 [node name="TimerNouMeteorit" type="Timer" parent="."]
 wait_time = 0.2

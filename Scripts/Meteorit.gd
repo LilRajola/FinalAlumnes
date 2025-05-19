@@ -1,7 +1,7 @@
 extends Area2D
 
 signal meteorit_mort
-
+const explosion_epica = preload("res://Escenes/explosió.tscn")
 var vida: float = 100
 var velocitat_gir := randf_range(-5, 5)
 var escala := randf_range(0.3, 1.2)
@@ -24,6 +24,8 @@ func hit(mal) -> void:
 
 func mor():
 	meteorit_mort.emit()
+	var animacio_explotar = explosion_epica.instantiate()
+	animacio_explotar.global_position = global_position
 	potser_powerup()
 	queue_free()
 

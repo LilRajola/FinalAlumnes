@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 @export var escena_laser: PackedScene 
 
+
 var acceleracio := Vector2.ZERO
 var accel_max := 200
-var bombes := 3 :
+var bombes = 3 :
 	set(noves_bombes):
 		if 0 <= noves_bombes and noves_bombes <= 3:
 			bombes = noves_bombes
@@ -38,6 +39,7 @@ var pot_disparar: bool = true
 @onready var animacions: AnimationPlayer = $Animacions
 @onready var barra_vida: TextureProgressBar = $Centre/BarraVida
 @onready var so_bomba: AudioStreamPlayer2D = $SoBomba
+@onready var timer: Timer = $Timer
 
 func _physics_process(delta: float) -> void:
 	vel_rotacio = 0
@@ -48,8 +50,12 @@ func _physics_process(delta: float) -> void:
 		vel_rotacio -= vel_rotacio_max
 	if Input.is_action_pressed("Endavant"):
 		acceleracio = Vector2.UP.rotated(global_rotation) * accel_max
+		$SoMotor.play()
+		$Estela.visible = true
 	else:
 		acceleracio = -velocity.normalized() * frenada
+		$SoMotor.playing = false
+		$Estela.visible = false
 	
 	if pot_disparar and Input.is_action_just_pressed("Dispara"):
 		dispara()
@@ -77,13 +83,18 @@ func desactiva_area_bomba():
 	area_bomba.monitoring = false
 
 func dispara() -> void:
-	so_laser.pitch_scale = randf_range(0.8, 1.2)
-	so_laser.play()
-	crea_bala(dreta.global_position)
-	crea_bala(esquerra.global_position)
+	if pot_disparar == true:
+		so_laser.pitch_scale = randf_range(0.8, 1.2)
+		so_laser.play()
+		crea_bala(dreta.global_position)
+		crea_bala(esquerra.global_position)
+		pot_disparar = false
+		timer.start()
 
 func hit(mal) -> void:
 	vida -= mal
+	if vida <= 0:
+		get_tree().change_scene_to_file("res://Escenes/game_over.tscn")
 
 func crea_bala(posicio: Vector2) -> void:
 	var nou_laser: Area2D = escena_laser.instantiate()
@@ -95,6 +106,16 @@ func _on_meteorit_mort() -> void:
 	meteorits_morts += 1
 	Global.Marcador.actualitza(meteorits_morts)
 
+	
+
 
 func _on_area_bomba_area_entered(area: Area2D) -> void:
 	area.mor()
+
+
+func _on_timer_timeout() -> void:
+	pot_disparar = true
+
+func power_up_bomba():
+	bombes += 1
+	print(bombes)

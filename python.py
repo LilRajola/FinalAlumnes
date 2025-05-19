@@ -62,7 +62,7 @@ def copia_amb_canvis(mot1, diccionari):
             paraula += lletra
         contador  = 0
     return paraula
-copia_amb_canvis('zupar', {'z':'s', 'u':'o'})    
+   
 
 def corregeix(paraula, paraules):
     """

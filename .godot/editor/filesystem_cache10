@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747144575
+::res://::1747654463
 export_presets.cfg::TextFile/TextFile::-1::1744465084::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::7746354846527135737::1744465084::1744465084::1::::<><><>0<>0<>bbc038e5127f13c42c2572aaf1755023<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 TODO.txt::TextFile/TextFile::-1::1744465084::0::1::::<><><>0<>0<><>::
-::res://Escenes/::1747116880
+::res://Escenes/::1747595707
 explosió.tscn::PackedScene/PackedScene::7694038255395882564::1747116879::0::1::::<><><>0<>0<><>::uid://c4orlxffiqwxq::::res://Imatges/explosion.png<>uid://dxtcig3elmk5i::::res://Scripts/explosió.gd<>uid://cve74pr38ec06::::res://Sons/explosio.wav
 game_over.tscn::PackedScene/PackedScene::5601926727320936282::1747116879::0::1::::<><><>0<>0<><>::uid://t4veu6e0y720::::res://Scripts/GameOver.gd<>uid://bcqv8mg2g35xm::::res://Sons/GameOver.ogg
 joc.tscn::PackedScene/PackedScene::1103684913909641022::1747116879::0::1::::<><><>0<>0<><>::uid://d3u3b1gor5fry::::res://Scripts/joc.gd<>uid://cetan8b78msb0::::res://Escenes/nau.tscn<>uid://b6tm6oxknn8tu::::res://Imatges/Nebulosa.png<>uid://c7hcf04v1ndjj::::res://Escenes/marcador.tscn
@@ -13,9 +13,9 @@ meteorit.tscn::PackedScene/PackedScene::3054183043525221146::1747116879::0::1:::
 nau.tscn::PackedScene/PackedScene::5092844870900115379::1747116878::0::1::::<><><>0<>0<><>::res://Imatges/Atlas/playerShip1_blue.tres<>uid://cihdgl200acn7::::res://Scripts/nau.gd<>uid://cgknbod5rvlhi::::res://Escenes/laser.tscn<>uid://mmpgyk1rkhg2::::res://Imatges/VXgkg8o.png<>uid://bwgd0iiyc5466::::res://Sons/Motor.ogg<>uid://ddrk20ca7s537::::res://Imatges/Barra_vida_transparent.png<>uid://bmq66eouhrc26::::res://Imatges/Barra_vida.png<>uid://w1ov4xouvln6::::res://Sons/laser1.wav<>uid://b8ngty017y55y::::res://Sons/ExplosioBomba.mp3<>uid://cfqk3m5bc3xpj::::res://Scripts/BarraVida.gd
 power_up_bomba.tscn::PackedScene/PackedScene::8409036047496942733::1747116880::0::1::::<><><>0<>0<><>::uid://cueayckgtxotc::::res://Scripts/PowerUPBomba.gd<>uid://y0ugj3e5in3e::::res://Sons/forceField_004.ogg
 power_up_vida.tscn::PackedScene/PackedScene::1675676633373156874::1747116880::0::1::::<><><>0<>0<><>::uid://dks7nsdoin722::::res://Scripts/power_up_vida.gd<>uid://y0ugj3e5in3e::::res://Sons/forceField_004.ogg
-::res://Fonts/::1744465548
+::res://Fonts/::1747595707
 kenvector_future.ttf::FontFile/FontFile::1165001528242832122::1744465085::1744465085::1::::<><><>0<>0<>b5bdef476f6c20435d32d4169b4932eb<>res://.godot/imported/kenvector_future.ttf-c5a91786f0709420de38d58d8c1dba53.fontdata::
-::res://Imatges/::1744465548
+::res://Imatges/::1747595711
 Barra_vida.png::CompressedTexture2D/CompressedTexture2D::3263654670440654901::1744465087::1744465086::1::::<><><>0<>0<>91213a98cd6214a04d62cf355cce9615<>res://.godot/imported/Barra_vida.png-fe1878a286a14afe58f22df32f1819b1.ctex::
 Barra_vida_transparent.png::CompressedTexture2D/CompressedTexture2D::7405579706392381664::1744465085::1744465086::1::::<><><>0<>0<>c662ee40514ae36652b33297cb269391<>res://.godot/imported/Barra_vida_transparent.png-6cd21386b4e98cfee984d575291c1bde.ctex::
 bomb.png::CompressedTexture2D/CompressedTexture2D::7062442669794685403::1744465086::1744465086::1::::<><><>0<>0<>dc19b2a88ed5205c32978071f5fe0ccc<>res://.godot/imported/bomb.png-8f1546440aa131036ad229d69224a006.ctex::
@@ -28,7 +28,7 @@ sheet.xml::TextFile/TextFile::-1::1744465086::0::1::::<><><>0<>0<><>::
 spr_stars01.png::CompressedTexture2D/CompressedTexture2D::4987366186613137466::1744465086::1744465087::1::::<><><>0<>0<>64b1905279bfcb62df278ab56b800677<>res://.godot/imported/spr_stars01.png-535e40c81b612d59957052c7b4448aeb.ctex::
 spr_stars02.png::CompressedTexture2D/CompressedTexture2D::3123211529768221481::1744465086::1744465086::1::::<><><>0<>0<>cdebd40ae4d3ef61b709246048f96003<>res://.godot/imported/spr_stars02.png-94dba381ec2ee1e600db7062cd6d0ff5.ctex::
 VXgkg8o.png::CompressedTexture2D/CompressedTexture2D::867961403572919971::1744465087::1744465086::1::::<><><>0<>0<>0ff5eee2012e6168c3099e983fea4907<>res://.godot/imported/VXgkg8o.png-35704e9b99d697a7cc4fa90e1aecd4ff.ctex::
-::res://Imatges/Atlas/::1744465549
+::res://Imatges/Atlas/::1747595721
 beam0.tres::AtlasTexture/AtlasTexture::-1::1744465108::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
 beam1.tres::AtlasTexture/AtlasTexture::-1::1744465096::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
 beam2.tres::AtlasTexture/AtlasTexture::-1::1744465111::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
@@ -323,7 +323,7 @@ wingYellow_4.tres::AtlasTexture/AtlasTexture::-1::1744465110::0::1::::<><><>0<>0
 wingYellow_5.tres::AtlasTexture/AtlasTexture::-1::1744465106::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
 wingYellow_6.tres::AtlasTexture/AtlasTexture::-1::1744465097::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
 wingYellow_7.tres::AtlasTexture/AtlasTexture::-1::1744465100::0::1::::<><><>0<>0<><>::res://Imatges/sheet.png
-::res://Scripts/::1747033311
+::res://Scripts/::1747595722
 BarraVida.gd::GDScript/GDScript::5157473478471892099::1744465139::0::1::::<>TextureProgressBar<><>0<>0<><>::
 explosió.gd::GDScript/GDScript::8812964711009505980::1744465138::0::1::::<>Sprite2D<><>0<>0<><>::
 Explosió.gdshader::Shader/Shader::4043119824593227931::1744465139::0::1::::<><><>0<>0<><>::
@@ -337,7 +337,7 @@ Meteorit.gd::GDScript/GDScript::2745258990827348221::1744465139::0::1::::<>Area2
 nau.gd::GDScript/GDScript::5348996247146475986::1744465138::0::1::::<>CharacterBody2D<><>0<>0<><>::
 PowerUPBomba.gd::GDScript/GDScript::6184918731010474600::1744465138::0::1::::<>Area2D<><>0<>0<><>::
 power_up_vida.gd::GDScript/GDScript::7900276396824044825::1744465138::0::1::::<>Area2D<><>0<>0<><>::
-::res://Sons/::1744465548
+::res://Sons/::1747595722
 explosio.wav::AudioStreamWAV/AudioStreamWAV::6257060142021268713::1744465140::1744465140::1::::<><><>0<>0<>42f3730590d3d0ae16870b1f0a831af4<>res://.godot/imported/explosio.wav-c3ddd0ce2ddb18b47ef0ddacb49344a5.sample::
 ExplosioBomba.mp3::AudioStreamMP3/AudioStreamMP3::4729888966997315276::1744465141::1744465140::1::::<><><>0<>0<>3c5e86ae906e0dbf6e37618ea6ee1b87<>res://.godot/imported/ExplosioBomba.mp3-3fb317b6e113a00b771ba729de019759.mp3str::
 forceField_004.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::1737367261969867408::1744465140::1744465140::1::::<><><>0<>0<>da51a57c990c1a47d130ddcedc9d6a6d<>res://.godot/imported/forceField_004.ogg-d0cb89a57706c9b345dc59a8d7c136f2.oggvorbisstr::
